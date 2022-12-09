@@ -1,18 +1,17 @@
 package com.bt.java.basics;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) throws Exception {
+        Scanner Obj = new Scanner(System.in);
+        String Name;
 
-        for (int i = 0; i <= 100; i++) {
-            if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
-        }
+        // Enter username and press Enter
+        System.out.println("Enter Name");
+        Name = Obj.nextLine();
+        System.out.println("Hello " + Name + ", welcome to AW Academy. ");
 
     }
 
